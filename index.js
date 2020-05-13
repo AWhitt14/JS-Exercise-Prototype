@@ -103,10 +103,14 @@ const cole = Baby('cole',2,'Thing-a-ma-bob');
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  
+  1. Used to bind a new operator with a constructor function.
+
+  2. used to return the window.
+
+  3.  explicit refers to the object that is beeing called or applied (.call,.apply)
+
+  4. Implicit is when used in a method and refers to the parent object.
 */
 
 
