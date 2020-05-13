@@ -78,6 +78,16 @@ function Car(model, milesPerGallon) {
 Car.prototype.fill = function(gallons){
   this.tank += gallons;
 }
+Car.prototype.drive = function(distance){
+  for (let i = 0; i < distance; i++){
+    if (this.tank > 0){ 
+      this.odometer++;
+      this.tank--;
+    } else {
+      return `I ran out of fuel at ${this.odometer} miles!`
+    }
+  }
+}
 
 const myCar = Car('Sentra', 60)
 /*
@@ -103,7 +113,7 @@ const cole = Baby('cole',2,'Thing-a-ma-bob');
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  
+
   1. Used to bind a new operator with a constructor function.
 
   2. used to return the window.
